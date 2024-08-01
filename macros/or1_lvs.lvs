@@ -274,10 +274,10 @@ hpol_in_res   = pol_in_hpol & res
 diff_not_res  = diff - res 
 diff_in_res   = diff & res
 
-ndiff_not_res = narea & diff_not_res
+ndiff_not_res = narea & diff_not_res.interacting(res)
 ndiff_in_res  = narea & diff_in_res
 
-pdiff_not_res = parea & diff_not_res
+pdiff_not_res = parea & diff_not_res.interacting(res)
 pdiff_in_res  = parea & diff_in_res
 
 cnt_in_cap = cnt & cap
